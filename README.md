@@ -1,4 +1,4 @@
-# Kali NetHunter Install Setup 
+# Kali NetHunter Install
 ```
 apt update -y
 apt upgrade -y
@@ -16,4 +16,19 @@ chmod +x install-nethunter-termux
 ## Install 
 ```
 ./install-nethunter-termux
+```
+## Run Kali NetHunter 
+```
+nh
+```
+## Fix Internet problem 
+```
+cat /etc/resolv.conf
+```
+```
+printf 'nameserver 1.1.1.1\nnameserver 8.8.8.8\n' > /etc/resolv.conf
+```
+```
+apt update -y
+apt upgrade -y
 ```
